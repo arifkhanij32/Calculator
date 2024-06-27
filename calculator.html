@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <form action="">
+        <div class="cal-container">
+            <h2>CASIO</h2>
+            <div>
+                <input type="number" id="number" placeholder="0" class="display">
+            </div>
+            <div>
+                <input type="button" onclick="display('7')" value="7" id="column1">
+                <input type="button" onclick="display('8')" value="8" id="column1">
+                <input type="button" onclick="display('9')" value="9" id="column1">
+                <input style="background-color:rgb(36, 33, 33);color: white;" type="button" onclick="display('+')" value="+" id="column1">
+            </div>
+            <div>
+                <input type="button" onclick="display('4')" value="4" id="column2">
+                <input type="button" onclick="display('5')" value="5" id="column2">
+                <input type="button" onclick="display('6')" value="6" id="column2">
+                <input style="background-color:rgb(36, 33, 33);color: white;" type="button" onclick="display('-')" value="-" id="column2">
+            </div>
+            <div>
+                <input type="button" onclick="display('1')" value="1" id="column3">
+                <input type="button" onclick="display('2')" value="2" id="column3">
+                <input type="button" onclick="display('3')" value="3" id="column3">
+                <input style="background-color:rgb(36, 33, 33);color: white;" type="button" onclick="display('*')" value="*" id="column3">
+            </div>
+            <div>
+                <input style="background-color:red;color: white;" onclick="clear()" type="button" value="C" id="column4">
+                <input type="button" onclick="display('0')" value="0" id="column4">
+                <input style="background-color:rgb(36, 33, 33);color: white;" type="button" onclick="calculate()" value="=" id="column4">
+                <input style="background-color:rgb(36, 33, 33);color: white;" type="button" onclick="display('/')" value="/" id="column4">
+            </div>
+          
+        </div>
+
+    </form>
+    <script src="calculator.css"></script>
+</body>
+</html>
